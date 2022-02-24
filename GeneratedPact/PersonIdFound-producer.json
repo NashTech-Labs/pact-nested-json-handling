@@ -1,0 +1,39 @@
+{
+  "consumer": {
+    "name": "PersonIdFound"
+  },
+  "provider": {
+    "name": "producer"
+  },
+  "messages": [
+    {
+      "description": "a user created message",
+      "metaData": {
+        "contentType": "application/json"
+      },
+      "contents": {
+        "sequenceNumber": "1",
+        "schemaVersion": "2.1",
+        "dataCenter": "dlas1",
+        "effectiveDatetime": "2019-01-30T12:36:43.843Z",
+        "type": "compliance.data-erasure-request.process-requested",
+        "body": "{\"requestId\":\"5374547d-2310-4190-8b63-0dcedc2138cb\",\"deadlineDate\":\"2019-03-15T12:00:00.000Z\",\"person\":\"{\\\"contractNo\\\":\\\"CAL3000\\\",\\\"puuid\\\":\\\"0634a5f8-ad06-41f0-b176-0e25c24ce2ee\\\",\\\"pendHire\\\":\\\"{pendHireId=SESSION_ID}\\\",\\\"eeo\\\":\\\"{eeoId=EEO_ID}\\\",\\\"opp\\\":\\\"{personId=6a34ec56-5091-48ea-92ba-9e8b9b8efd24, employeeId=ece6841f-86c6-4bcb-9882-bc5e9fcfa2b2}\\\",\\\"eeId\\\":\\\"EEID1\\\",\\\"acaFiling\\\":\\\"{nonEmployeeId=ACA_ID, aleMemberId=Ale_ID}\\\",\\\"identity\\\":\\\"{accountStoreId=ACCOUNT_ID}\\\",\\\"coreWorkflow\\\":\\\"{jobId=JOB_ID}\\\",\\\"onboarding\\\":\\\"{personId=ONB_ID}\\\",\\\"personId\\\":\\\"080b3662-28d1-444b-87af-f79c7f3ebcde\\\",\\\"candidateKey\\\":\\\"59744513-0EE2-4EB9-A562-75855DDB02C8\\\",\\\"pdoc\\\":\\\"{employeeId=f8e8a19b-d842-46ae-8906-3ec454d527c2, cliendId=f8e8a19b-d842-46ae-8906-3ec454d527c2}\\\",\\\"userIntegrationKey\\\":\\\"59744513-0EE2-4EB9-A562-75855DDB02C8\\\"}\",\"requestedDate\":\"2019-01-30T12:00:00.000Z\",\"products\":\"[BI]\",\"policy\":\"{}\"}",
+        "userId": "16490fb4-c21c-496c-9b35-696171c49651",
+        "aggregateId": "5374547d-2310-4190-8b63-0dcedc2138cb",
+        "tenantId": "5923a6e3-32bc-9c0f-b82e-c7b9bcddbdav",
+        "correlationId": "41c2b6a2-8693-4196-b745-a98a10131071",
+        "id": "432cc207-40d4-469f-b062-97841dfc7197",
+        "user": "Marcus Mason",
+        "timestamp": "2019-01-30T12:36:43.843Z"
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.0.10"
+    }
+  }
+}
