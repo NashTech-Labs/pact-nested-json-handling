@@ -12,3 +12,4 @@ A JSON object is an unordered set of key/value pairs. A JSON array is an ordered
 ## Run the contract test using below maven command
 
 ``` mvn clean install ```
+``` mvn clean test ```
