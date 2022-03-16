@@ -1,0 +1,22 @@
+name: Test-Automation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build_and_test:
+    name: Install and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - run: mvn clean install
+      - run: mvn clean verify
+      - run: mvn test
+      - run: mvn compile
+      - run: mvn clean package

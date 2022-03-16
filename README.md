@@ -1,4 +1,4 @@
-# pact-nested-json-handling
+mvn test# pact-nested-json-handling
 
 ## How to parse nested JSON in Java?
 A JSON object is an unordered set of key/value pairs. A JSON array is an ordered collection of values. The values could be objects or arrays. Nested JSON is a JSON file with its values being other JSON objects. Accessing nested JSON objects is very much like accessing nested arrays.
